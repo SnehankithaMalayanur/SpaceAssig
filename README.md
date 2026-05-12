@@ -1,27 +1,59 @@
-# Space
+# SpaceAssig (Flight Search Application)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+A modern web application built with the Angular framework designed to search and manage flight or space travel data. This project demonstrates modular architecture, service-based data handling, and component-driven UI.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* **Flight Search/Listing:** Browse and search through available travel options.
+* **Service-Oriented Architecture:** Uses Angular Services (`flights.service.ts`) to manage data and API logic.
+* **Routing:** Implements `app-routing.module.ts` for seamless navigation between views.
+* **Reactive Design:** A responsive interface built with Angular's component-based CSS and HTML.
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **Framework:** [Angular](https://angular.io/)
+* **Language:** TypeScript
+* **Styling:** CSS3
+* **Build Tool:** Angular CLI
 
-## Build
+## Prerequisites
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Before you begin, ensure you have the following installed:
+* [Node.js](https://nodejs.org/) (Latest LTS version)
+* [Angular CLI](https://angular.io/cli) (`npm install -g @angular/cli`)
 
-## Running unit tests
+## Installation & Local Setup
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/SnehankithaMalayanur/SpaceAssig.git](https://github.com/SnehankithaMalayanur/SpaceAssig.git)
+    cd SpaceAssig
+    ```
 
-## Running end-to-end tests
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3.  **Run the development server:**
+    ```bash
+    ng serve
+    ```
 
-## Further help
+4.  **View the app:**
+    Open your browser and navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Project Structure
+
+* `src/app/`: Contains the core logic:
+    * `flights.service.ts`: Handles data fetching and business logic for flight information.
+    * `app-routing.module.ts`: Defines the application's navigation paths.
+    * `app.component.*`: The root component of the application.
+* `angular.json`: CLI configuration for inheritance and build targets.
+* `src/assets/`: Static files like images and icons.
+
+## Running Tests
+
+To execute unit tests via [Karma](https://karma-runner.github.io):
+```bash
+ng test
